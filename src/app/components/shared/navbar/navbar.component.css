@@ -1,0 +1,19 @@
+nav {
+  display: flex;
+  justify-content: space-around;
+  background-color: #212121;
+  color: #fff;
+  padding: 10px;
+
+  a {
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+
+    &.active {
+      color: red;
+      text-decoration: underline;
+      font-weight: bold;
+    }
+  }
+}

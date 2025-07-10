@@ -1,0 +1,9 @@
+h1 {
+  color: red;
+}
+
+button {
+  padding: 10px;
+  cursor: pointer;
+  margin: 5px;
+}
