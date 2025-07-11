@@ -1,0 +1,14 @@
+<h3>{{ listName() }}</h3>
+<ul>
+  @for (character of characters(); track character.id; let idx = $index ) {
+  <li>
+    <span>{{ idx + 1 }} - {{ character.name }}</span>
+    <strong
+      [class.text-danger]="character.power > 900"
+      [class.text-primary]="character.power > 500"
+    >
+      ({{ character.power }})</strong
+    >
+  </li>
+  }
+</ul>
